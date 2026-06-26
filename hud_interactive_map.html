@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2efe4d45803d90c803e924d3ce260368 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2efe4d45803d90c803e924d3ce260368" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2efe4d45803d90c803e924d3ce260368 = L.map(
+                "map_2efe4d45803d90c803e924d3ce260368",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee67dc8b1f38af24ce2bcfcbd3837a21 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ee67dc8b1f38af24ce2bcfcbd3837a21.addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+            var circle_marker_2a2877f9edb32dee34ef11e2c3a32223 = L.circleMarker(
+                [33.77353599904453, -118.27514199962158],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_cc59593508a5415f28b59349dabfea8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3966dcae95536300d7727dd2e14157b = $(`<div id="html_c3966dcae95536300d7727dd2e14157b" style="width: 100.0%; height: 100.0%;">Los Angeles               - 56 units</div>`)[0];
+                popup_cc59593508a5415f28b59349dabfea8d.setContent(html_c3966dcae95536300d7727dd2e14157b);
+            
+        
+
+        circle_marker_2a2877f9edb32dee34ef11e2c3a32223.bindPopup(popup_cc59593508a5415f28b59349dabfea8d)
+        ;
+
+        
+    
+    
+            circle_marker_2a2877f9edb32dee34ef11e2c3a32223.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc5e8457d862e6cf5dc656f8af88f0ea = L.circleMarker(
+                [34.042914999378475, -118.1598649999825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_5cc3fe9affb65fc7804472fdd714b4ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f19e88f95dfd691ae08f7cf248519331 = $(`<div id="html_f19e88f95dfd691ae08f7cf248519331" style="width: 100.0%; height: 100.0%;">Los Angeles               - 37 units</div>`)[0];
+                popup_5cc3fe9affb65fc7804472fdd714b4ab.setContent(html_f19e88f95dfd691ae08f7cf248519331);
+            
+        
+
+        circle_marker_cc5e8457d862e6cf5dc656f8af88f0ea.bindPopup(popup_5cc3fe9affb65fc7804472fdd714b4ab)
+        ;
+
+        
+    
+    
+            circle_marker_cc5e8457d862e6cf5dc656f8af88f0ea.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9468c2430a3d6482d045458fc5f660de = L.circleMarker(
+                [37.80456599908923, -122.41574000016375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_57d532635d234109bae1fbfbc5f949c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ae25b6c2c5938cde1e5582d19ea28f3 = $(`<div id="html_3ae25b6c2c5938cde1e5582d19ea28f3" style="width: 100.0%; height: 100.0%;">San Francisco             - 20 units</div>`)[0];
+                popup_57d532635d234109bae1fbfbc5f949c4.setContent(html_3ae25b6c2c5938cde1e5582d19ea28f3);
+            
+        
+
+        circle_marker_9468c2430a3d6482d045458fc5f660de.bindPopup(popup_57d532635d234109bae1fbfbc5f949c4)
+        ;
+
+        
+    
+    
+            circle_marker_9468c2430a3d6482d045458fc5f660de.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeb8bf3b607b1a1886223a0fc0f4a3b9 = L.circleMarker(
+                [33.774171999265995, -118.27519699987317],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_3646967c11ec24ee756c6cdf2fa5442f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2abd548eef245d99a04e05baff2e2f8 = $(`<div id="html_b2abd548eef245d99a04e05baff2e2f8" style="width: 100.0%; height: 100.0%;">Los Angeles               - 16 units</div>`)[0];
+                popup_3646967c11ec24ee756c6cdf2fa5442f.setContent(html_b2abd548eef245d99a04e05baff2e2f8);
+            
+        
+
+        circle_marker_aeb8bf3b607b1a1886223a0fc0f4a3b9.bindPopup(popup_3646967c11ec24ee756c6cdf2fa5442f)
+        ;
+
+        
+    
+    
+            circle_marker_aeb8bf3b607b1a1886223a0fc0f4a3b9.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3efe85b804f38fb3900baee8cdbf923 = L.circleMarker(
+                [33.93066199928198, -118.23577200009348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_0476646a15139a0dc2f504f5c8cf7165 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e821b4f2620986b022b1ebebfce12357 = $(`<div id="html_e821b4f2620986b022b1ebebfce12357" style="width: 100.0%; height: 100.0%;">Los Angeles               - 12 units</div>`)[0];
+                popup_0476646a15139a0dc2f504f5c8cf7165.setContent(html_e821b4f2620986b022b1ebebfce12357);
+            
+        
+
+        circle_marker_f3efe85b804f38fb3900baee8cdbf923.bindPopup(popup_0476646a15139a0dc2f504f5c8cf7165)
+        ;
+
+        
+    
+    
+            circle_marker_f3efe85b804f38fb3900baee8cdbf923.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_955f3d16b529763c92d8668e5dbcf648 = L.circleMarker(
+                [34.26663899944485, -118.41580199984632],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_4573cd9dd412a4551786e8f67e763967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cf113bb8712e980690d2138b47200be = $(`<div id="html_2cf113bb8712e980690d2138b47200be" style="width: 100.0%; height: 100.0%;">Los Angeles               - 12 units</div>`)[0];
+                popup_4573cd9dd412a4551786e8f67e763967.setContent(html_2cf113bb8712e980690d2138b47200be);
+            
+        
+
+        circle_marker_955f3d16b529763c92d8668e5dbcf648.bindPopup(popup_4573cd9dd412a4551786e8f67e763967)
+        ;
+
+        
+    
+    
+            circle_marker_955f3d16b529763c92d8668e5dbcf648.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e4dc8238298b82ad8e5306b357b2d83 = L.circleMarker(
+                [37.806046999313935, -122.29171499967539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_568a821aa4cbb27fd1bcd5515c38b9c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f6ccdc6e4e94b4df08c52766eafafca = $(`<div id="html_5f6ccdc6e4e94b4df08c52766eafafca" style="width: 100.0%; height: 100.0%;">Alameda                   - 10 units</div>`)[0];
+                popup_568a821aa4cbb27fd1bcd5515c38b9c6.setContent(html_5f6ccdc6e4e94b4df08c52766eafafca);
+            
+        
+
+        circle_marker_0e4dc8238298b82ad8e5306b357b2d83.bindPopup(popup_568a821aa4cbb27fd1bcd5515c38b9c6)
+        ;
+
+        
+    
+    
+            circle_marker_0e4dc8238298b82ad8e5306b357b2d83.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42d24192b155716b19e1340de4702077 = L.circleMarker(
+                [33.91644499914515, -118.2379489998109],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_0b835ce64d79906c8bfb847b5bef3f0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d21aac64da480421a8a04c7d896625d8 = $(`<div id="html_d21aac64da480421a8a04c7d896625d8" style="width: 100.0%; height: 100.0%;">Los Angeles               - 10 units</div>`)[0];
+                popup_0b835ce64d79906c8bfb847b5bef3f0e.setContent(html_d21aac64da480421a8a04c7d896625d8);
+            
+        
+
+        circle_marker_42d24192b155716b19e1340de4702077.bindPopup(popup_0b835ce64d79906c8bfb847b5bef3f0e)
+        ;
+
+        
+    
+    
+            circle_marker_42d24192b155716b19e1340de4702077.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49a09f937de165f53152833344722827 = L.circleMarker(
+                [34.04282799920389, -118.22351699973122],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_2ad1a48f92f48158dee38aff44057c26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a746522e64197f2cba897c1e8c95d03 = $(`<div id="html_7a746522e64197f2cba897c1e8c95d03" style="width: 100.0%; height: 100.0%;">Los Angeles               - 10 units</div>`)[0];
+                popup_2ad1a48f92f48158dee38aff44057c26.setContent(html_7a746522e64197f2cba897c1e8c95d03);
+            
+        
+
+        circle_marker_49a09f937de165f53152833344722827.bindPopup(popup_2ad1a48f92f48158dee38aff44057c26)
+        ;
+
+        
+    
+    
+            circle_marker_49a09f937de165f53152833344722827.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67c3a68867b6e9683652c17cd35ec240 = L.circleMarker(
+                [33.99321699911976, -118.40970400033912],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_d7f5ef95857efc0d943a3cc7a15dbe85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86a0a35efad83baa80fa1e325cd6a682 = $(`<div id="html_86a0a35efad83baa80fa1e325cd6a682" style="width: 100.0%; height: 100.0%;">Los Angeles               - 10 units</div>`)[0];
+                popup_d7f5ef95857efc0d943a3cc7a15dbe85.setContent(html_86a0a35efad83baa80fa1e325cd6a682);
+            
+        
+
+        circle_marker_67c3a68867b6e9683652c17cd35ec240.bindPopup(popup_d7f5ef95857efc0d943a3cc7a15dbe85)
+        ;
+
+        
+    
+    
+            circle_marker_67c3a68867b6e9683652c17cd35ec240.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59a204d46a86b22a4163c6e98dc52325 = L.circleMarker(
+                [37.76106399880747, -122.19525000038841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_130695242c1b3238f7626e123a0c48c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22359632840d3f5712dfcf2a29d79b6d = $(`<div id="html_22359632840d3f5712dfcf2a29d79b6d" style="width: 100.0%; height: 100.0%;">Alameda                   - 10 units</div>`)[0];
+                popup_130695242c1b3238f7626e123a0c48c4.setContent(html_22359632840d3f5712dfcf2a29d79b6d);
+            
+        
+
+        circle_marker_59a204d46a86b22a4163c6e98dc52325.bindPopup(popup_130695242c1b3238f7626e123a0c48c4)
+        ;
+
+        
+    
+    
+            circle_marker_59a204d46a86b22a4163c6e98dc52325.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_063ea671abba479b9537f05419f16be2 = L.circleMarker(
+                [37.78164999892759, -122.42795699999289],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_b49b97f08637306fb4bee355d1ae4d35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51128cba6d3ad54d02a5fcf06d7a3340 = $(`<div id="html_51128cba6d3ad54d02a5fcf06d7a3340" style="width: 100.0%; height: 100.0%;">San Francisco             - 9 units</div>`)[0];
+                popup_b49b97f08637306fb4bee355d1ae4d35.setContent(html_51128cba6d3ad54d02a5fcf06d7a3340);
+            
+        
+
+        circle_marker_063ea671abba479b9537f05419f16be2.bindPopup(popup_b49b97f08637306fb4bee355d1ae4d35)
+        ;
+
+        
+    
+    
+            circle_marker_063ea671abba479b9537f05419f16be2.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e46ec1afd27b6e9e10baf2c7e52c2541 = L.circleMarker(
+                [33.93462799898456, -118.24970700005571],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_82dde4485af9365782bec51364d2b7cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b787f8b255176c1f1d7e6bb25292fad = $(`<div id="html_6b787f8b255176c1f1d7e6bb25292fad" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_82dde4485af9365782bec51364d2b7cb.setContent(html_6b787f8b255176c1f1d7e6bb25292fad);
+            
+        
+
+        circle_marker_e46ec1afd27b6e9e10baf2c7e52c2541.bindPopup(popup_82dde4485af9365782bec51364d2b7cb)
+        ;
+
+        
+    
+    
+            circle_marker_e46ec1afd27b6e9e10baf2c7e52c2541.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_935ddf14ecf7e1b8d1c1a25acb44d5c7 = L.circleMarker(
+                [33.993316999174546, -118.24093499981531],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_55ce903285b6e5673b907761bfadf16a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a4679877ab6c7448adca4bdb0b30e4d = $(`<div id="html_8a4679877ab6c7448adca4bdb0b30e4d" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_55ce903285b6e5673b907761bfadf16a.setContent(html_8a4679877ab6c7448adca4bdb0b30e4d);
+            
+        
+
+        circle_marker_935ddf14ecf7e1b8d1c1a25acb44d5c7.bindPopup(popup_55ce903285b6e5673b907761bfadf16a)
+        ;
+
+        
+    
+    
+            circle_marker_935ddf14ecf7e1b8d1c1a25acb44d5c7.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cf1b4b5f9a43f5b5bf91d5019a6caaf = L.circleMarker(
+                [34.059867998814795, -118.19365800041031],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_10744ddc6439b6ce67fab37f9ad3d06d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0573d83c26ba50cdd24b1ce95ca13383 = $(`<div id="html_0573d83c26ba50cdd24b1ce95ca13383" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_10744ddc6439b6ce67fab37f9ad3d06d.setContent(html_0573d83c26ba50cdd24b1ce95ca13383);
+            
+        
+
+        circle_marker_7cf1b4b5f9a43f5b5bf91d5019a6caaf.bindPopup(popup_10744ddc6439b6ce67fab37f9ad3d06d)
+        ;
+
+        
+    
+    
+            circle_marker_7cf1b4b5f9a43f5b5bf91d5019a6caaf.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a69aaefa71f2d4a4925d90f48d94df96 = L.circleMarker(
+                [38.65289399894583, -121.29017300010726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_67519e1df6476c79d83dc5c97f741e69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0963cba333eff40f0311f90bbfc09fd = $(`<div id="html_c0963cba333eff40f0311f90bbfc09fd" style="width: 100.0%; height: 100.0%;">Sacramento                - 8 units</div>`)[0];
+                popup_67519e1df6476c79d83dc5c97f741e69.setContent(html_c0963cba333eff40f0311f90bbfc09fd);
+            
+        
+
+        circle_marker_a69aaefa71f2d4a4925d90f48d94df96.bindPopup(popup_67519e1df6476c79d83dc5c97f741e69)
+        ;
+
+        
+    
+    
+            circle_marker_a69aaefa71f2d4a4925d90f48d94df96.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e797d2e7dfab195f0c08461963160e0 = L.circleMarker(
+                [33.850928999286005, -118.1815710002775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_8e52bb2f598ff4ecf9a330de7756dcdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5b9bc34c411a879ea988dd9f0e55aeb = $(`<div id="html_b5b9bc34c411a879ea988dd9f0e55aeb" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_8e52bb2f598ff4ecf9a330de7756dcdc.setContent(html_b5b9bc34c411a879ea988dd9f0e55aeb);
+            
+        
+
+        circle_marker_5e797d2e7dfab195f0c08461963160e0.bindPopup(popup_8e52bb2f598ff4ecf9a330de7756dcdc)
+        ;
+
+        
+    
+    
+            circle_marker_5e797d2e7dfab195f0c08461963160e0.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_658f0415a043ecf0e5b7e4638301b2ee = L.circleMarker(
+                [38.56132099931054, -121.50648199980182],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_526d8c560fe645a11ddcc6d2904efaaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aabc4ddd3735524f0085baf4a4735b8c = $(`<div id="html_aabc4ddd3735524f0085baf4a4735b8c" style="width: 100.0%; height: 100.0%;">Sacramento                - 8 units</div>`)[0];
+                popup_526d8c560fe645a11ddcc6d2904efaaf.setContent(html_aabc4ddd3735524f0085baf4a4735b8c);
+            
+        
+
+        circle_marker_658f0415a043ecf0e5b7e4638301b2ee.bindPopup(popup_526d8c560fe645a11ddcc6d2904efaaf)
+        ;
+
+        
+    
+    
+            circle_marker_658f0415a043ecf0e5b7e4638301b2ee.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef5fb675c92b5e9724ccb670b086856b = L.circleMarker(
+                [37.76016399916832, -122.19806599961517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_fbebf81ed80c17a711aa149e1ac5177c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5aa51d8f7f1feb0140348e9b18f5e7 = $(`<div id="html_9c5aa51d8f7f1feb0140348e9b18f5e7" style="width: 100.0%; height: 100.0%;">Alameda                   - 8 units</div>`)[0];
+                popup_fbebf81ed80c17a711aa149e1ac5177c.setContent(html_9c5aa51d8f7f1feb0140348e9b18f5e7);
+            
+        
+
+        circle_marker_ef5fb675c92b5e9724ccb670b086856b.bindPopup(popup_fbebf81ed80c17a711aa149e1ac5177c)
+        ;
+
+        
+    
+    
+            circle_marker_ef5fb675c92b5e9724ccb670b086856b.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6beb47f1b73040ece6e62ed18f9a4928 = L.circleMarker(
+                [36.736108999240784, -119.7202110001503],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_91367b4b4b9d4b4bf912b6003fda187f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b916904d43031649e231a166a07b37a7 = $(`<div id="html_b916904d43031649e231a166a07b37a7" style="width: 100.0%; height: 100.0%;">Fresno                    - 8 units</div>`)[0];
+                popup_91367b4b4b9d4b4bf912b6003fda187f.setContent(html_b916904d43031649e231a166a07b37a7);
+            
+        
+
+        circle_marker_6beb47f1b73040ece6e62ed18f9a4928.bindPopup(popup_91367b4b4b9d4b4bf912b6003fda187f)
+        ;
+
+        
+    
+    
+            circle_marker_6beb47f1b73040ece6e62ed18f9a4928.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6a9d5c63978c8b9f46aaf2e4a6fe910 = L.circleMarker(
+                [34.05740399892619, -118.19532700013961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_8f954d3681e31f52d1470f4d845e0cb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54b11e5e026c4aa31c7cd62d96c3b584 = $(`<div id="html_54b11e5e026c4aa31c7cd62d96c3b584" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_8f954d3681e31f52d1470f4d845e0cb1.setContent(html_54b11e5e026c4aa31c7cd62d96c3b584);
+            
+        
+
+        circle_marker_e6a9d5c63978c8b9f46aaf2e4a6fe910.bindPopup(popup_8f954d3681e31f52d1470f4d845e0cb1)
+        ;
+
+        
+    
+    
+            circle_marker_e6a9d5c63978c8b9f46aaf2e4a6fe910.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8ecf4d651c42576c8e4547547951975 = L.circleMarker(
+                [33.77724399936537, -118.30953000007615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_7ffce1815e40d3f669489b67a8063ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed9b456366d9abebba2aeea46b8d8006 = $(`<div id="html_ed9b456366d9abebba2aeea46b8d8006" style="width: 100.0%; height: 100.0%;">Los Angeles               - 8 units</div>`)[0];
+                popup_7ffce1815e40d3f669489b67a8063ae1.setContent(html_ed9b456366d9abebba2aeea46b8d8006);
+            
+        
+
+        circle_marker_a8ecf4d651c42576c8e4547547951975.bindPopup(popup_7ffce1815e40d3f669489b67a8063ae1)
+        ;
+
+        
+    
+    
+            circle_marker_a8ecf4d651c42576c8e4547547951975.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b4d7d694d3ffec08796ffe728e99fe3 = L.circleMarker(
+                [34.041303999278966, -118.15780399971771],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_90dc89f40698f8e42af8025eec5092eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_568f8f4e755cd3d1e2444736f38b9ab3 = $(`<div id="html_568f8f4e755cd3d1e2444736f38b9ab3" style="width: 100.0%; height: 100.0%;">Los Angeles               - 7 units</div>`)[0];
+                popup_90dc89f40698f8e42af8025eec5092eb.setContent(html_568f8f4e755cd3d1e2444736f38b9ab3);
+            
+        
+
+        circle_marker_9b4d7d694d3ffec08796ffe728e99fe3.bindPopup(popup_90dc89f40698f8e42af8025eec5092eb)
+        ;
+
+        
+    
+    
+            circle_marker_9b4d7d694d3ffec08796ffe728e99fe3.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b85fb81fed8dddbc95e441b8e7b9d5c = L.circleMarker(
+                [37.76120999936426, -122.19716400034008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_3f611151a3375a58c89cf6a592d8253d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed137e20787db03edf6183411653120f = $(`<div id="html_ed137e20787db03edf6183411653120f" style="width: 100.0%; height: 100.0%;">Alameda                   - 7 units</div>`)[0];
+                popup_3f611151a3375a58c89cf6a592d8253d.setContent(html_ed137e20787db03edf6183411653120f);
+            
+        
+
+        circle_marker_4b85fb81fed8dddbc95e441b8e7b9d5c.bindPopup(popup_3f611151a3375a58c89cf6a592d8253d)
+        ;
+
+        
+    
+    
+            circle_marker_4b85fb81fed8dddbc95e441b8e7b9d5c.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_856b5093c3fac5a982167b93c72c599f = L.circleMarker(
+                [33.849884998765326, -118.1774510002961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_4725808f0ff58cd3d9e33df3ea98d7e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a21eb37e39e2bbf1998b1b678961110 = $(`<div id="html_3a21eb37e39e2bbf1998b1b678961110" style="width: 100.0%; height: 100.0%;">Los Angeles               - 7 units</div>`)[0];
+                popup_4725808f0ff58cd3d9e33df3ea98d7e2.setContent(html_3a21eb37e39e2bbf1998b1b678961110);
+            
+        
+
+        circle_marker_856b5093c3fac5a982167b93c72c599f.bindPopup(popup_4725808f0ff58cd3d9e33df3ea98d7e2)
+        ;
+
+        
+    
+    
+            circle_marker_856b5093c3fac5a982167b93c72c599f.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46a3042204a5d0382a497417ee31eeb0 = L.circleMarker(
+                [38.52213399891172, -121.44737000015911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_a2725ebaa0921a51bc21683f8d276761 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_084cb4dd7c552af7a6c6b9bc688cd28a = $(`<div id="html_084cb4dd7c552af7a6c6b9bc688cd28a" style="width: 100.0%; height: 100.0%;">Sacramento                - 7 units</div>`)[0];
+                popup_a2725ebaa0921a51bc21683f8d276761.setContent(html_084cb4dd7c552af7a6c6b9bc688cd28a);
+            
+        
+
+        circle_marker_46a3042204a5d0382a497417ee31eeb0.bindPopup(popup_a2725ebaa0921a51bc21683f8d276761)
+        ;
+
+        
+    
+    
+            circle_marker_46a3042204a5d0382a497417ee31eeb0.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ef691db619d217993c6c5c209c6dd78 = L.circleMarker(
+                [33.93300099903154, -118.246475000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_86b9c0c5323cfea60307739c54c224e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efa52ce2eb08a6ec4ca40918ce4ab82d = $(`<div id="html_efa52ce2eb08a6ec4ca40918ce4ab82d" style="width: 100.0%; height: 100.0%;">Los Angeles               - 6 units</div>`)[0];
+                popup_86b9c0c5323cfea60307739c54c224e3.setContent(html_efa52ce2eb08a6ec4ca40918ce4ab82d);
+            
+        
+
+        circle_marker_4ef691db619d217993c6c5c209c6dd78.bindPopup(popup_86b9c0c5323cfea60307739c54c224e3)
+        ;
+
+        
+    
+    
+            circle_marker_4ef691db619d217993c6c5c209c6dd78.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_818dd167ea2645b9a64811149b3453d9 = L.circleMarker(
+                [34.44769199935289, -119.27227000037873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_81a0127398278050201ccdaad2edc340 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e1d49b09d8780c04b36a19269444ff9 = $(`<div id="html_7e1d49b09d8780c04b36a19269444ff9" style="width: 100.0%; height: 100.0%;">Ventura                   - 6 units</div>`)[0];
+                popup_81a0127398278050201ccdaad2edc340.setContent(html_7e1d49b09d8780c04b36a19269444ff9);
+            
+        
+
+        circle_marker_818dd167ea2645b9a64811149b3453d9.bindPopup(popup_81a0127398278050201ccdaad2edc340)
+        ;
+
+        
+    
+    
+            circle_marker_818dd167ea2645b9a64811149b3453d9.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c26e254fe96285d6f86bcbe3a3b37b3 = L.circleMarker(
+                [37.616487998866006, -120.980636000302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_dcbabaf649e65b8352f60ed685687ef5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfe6b9aa78cc33256e874ea9304f74e0 = $(`<div id="html_dfe6b9aa78cc33256e874ea9304f74e0" style="width: 100.0%; height: 100.0%;">Stanislaus                - 6 units</div>`)[0];
+                popup_dcbabaf649e65b8352f60ed685687ef5.setContent(html_dfe6b9aa78cc33256e874ea9304f74e0);
+            
+        
+
+        circle_marker_2c26e254fe96285d6f86bcbe3a3b37b3.bindPopup(popup_dcbabaf649e65b8352f60ed685687ef5)
+        ;
+
+        
+    
+    
+            circle_marker_2c26e254fe96285d6f86bcbe3a3b37b3.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb72655471cfdd3512c9daa43b82ab51 = L.circleMarker(
+                [34.20634499900813, -119.16604299991607],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+        var popup_27693fb88168d7e0f0c2b49e8ae028eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f9c60074d73b5bb65097265f36010f1 = $(`<div id="html_7f9c60074d73b5bb65097265f36010f1" style="width: 100.0%; height: 100.0%;">Ventura                   - 6 units</div>`)[0];
+                popup_27693fb88168d7e0f0c2b49e8ae028eb.setContent(html_7f9c60074d73b5bb65097265f36010f1);
+            
+        
+
+        circle_marker_cb72655471cfdd3512c9daa43b82ab51.bindPopup(popup_27693fb88168d7e0f0c2b49e8ae028eb)
+        ;
+
+        
+    
+    
+            circle_marker_cb72655471cfdd3512c9daa43b82ab51.bindTooltip(
+                `<div>
+                     Top 30 Housing Sites
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_ee67dc8b1f38af24ce2bcfcbd3837a21.addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+    
+            tile_layer_ee67dc8b1f38af24ce2bcfcbd3837a21.addTo(map_2efe4d45803d90c803e924d3ce260368);
+        
+</script>
+</html>
